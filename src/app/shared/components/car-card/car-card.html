@@ -3,6 +3,5 @@
   <h3 class="card-header" >{{car().brand.toUpperCase()}} - {{car().model.toUpperCase()}}</h3>
   <p class="card-year">Year: {{car().year}}</p>
   <p class="card-price">Price: ${{car().price}}</p>
-  <p class="card-description">{{car().description}}</p>
-  <button class="primary">View Details</button>
+  <a [routerLink]="['/details-car', car().id]" routerLinkActive="router-link-active" >Show More</a>
 </section>

@@ -1,1 +1,34 @@
-<p>details-car works!</p>
+<article>
+  <h3 class="detail-header">
+    {{car?.brand}} {{car?.model}} Details
+  </h3>
+  <img src="car?.photo" alt="Photo of {{car?.brand}} {{car?.model}}" class="detail-photo" crossorigin/>
+  <h4 class="car-details">
+    {{car?.brand}} {{car?.model}} - {{car?.year}}
+  </h4>
+  <p>{{car?.description}}</p>
+  <section class="car-features">
+    <h4>Car features</h4>
+    <ul>
+      <li>Units Avilable: {{car?.unitsAvailable}}</li>
+      @for (feature of car?.features; track $index) {
+        <li>{{feature}}</li>
+      }
+    </ul>
+  </section>
+  <section class="engine-data">
+    <h5>Engine Details</h5>
+    <ul>
+      <li>Type: {{car?.engine?.type}}</li>
+      <li>Horsepower: {{car?.engine?.horsepower}}</li>
+      <li>Torque: {{car?.engine?.torque}}</li>
+      <li>Displacement: {{car?.engine?.displacement}} cc</li>
+      <li>Fuel Type: {{car?.engine?.fuelType}}</li>
+      <li>Configuration: {{car?.engine?.configuration}}</li>
+      <li>Turbocharged: {{car?.engine?.turbocharged ? 'Yes' : 'No'}}</li>
+      <li>Hybrid: {{car?.engine?.hybrid ? 'Yes' : 'No'}}</li>
+      <li>Electric: {{car?.engine?.electric ? 'Yes' : 'No'}}</li>
+    </ul>
+  </section>
+
+</article>
