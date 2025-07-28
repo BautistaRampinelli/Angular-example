@@ -1,0 +1,5 @@
+<div class="car-list">
+  @for (car of carList(); track car.id) {
+    <app-car-card [car]="car"></app-car-card>
+  }
+</div>

@@ -1,0 +1,8 @@
+<section class="car-card">
+  <img class="card-photo" [src]="car().photo" alt="Photo of {{car().brand}} -- {{car().model}}" />
+  <h3 class="card-header" >{{car().brand.toUpperCase()}} - {{car().model.toUpperCase()}}</h3>
+  <p class="card-year">Year: {{car().year}}</p>
+  <p class="card-price">Price: ${{car().price}}</p>
+  <p class="card-description">{{car().description}}</p>
+  <button class="primary">View Details</button>
+</section>
