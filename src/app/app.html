@@ -1,6 +1,8 @@
 <main>
-<app-header></app-header>
+<a [routerLink]="['/']">
+  <app-header/>
+</a>
 <section class="app-content">
-  <app-home></app-home>
+  <router-outlet/>
 </section>
 </main>
