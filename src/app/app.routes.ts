@@ -11,4 +11,9 @@ export const routes: Routes = [
     loadComponent: () => import('./shared/components/details-car/details-car').then(m => m.DetailsCar),
     title: 'Car Details'
   },
+  {
+    path: 'contact',
+    loadComponent: () => import('./pages/contact/contact').then(m => m.Contact),
+    title: 'Contact Us'
+  },
 ];

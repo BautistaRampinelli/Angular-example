@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './search-form.scss'
 })
 export class SearchForm {
-
+  filterResults(filterValue: string): void {
+    console.log('Filtering results for:', filterValue);
+  }
 }

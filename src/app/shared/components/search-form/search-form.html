@@ -1,6 +1,6 @@
 <section class="search-form">
   <form>
-    <input type="text" placeholder="Filter by model"/>
-    <button class="primary" type="submit">Search</button>
+    <input type="text" placeholder="Filter by model" #filter/>
+    <button class="primary" type="submit" (onclick)="filterResults(filter.value)">Search</button>
   </form>
 </section>
